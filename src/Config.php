@@ -69,9 +69,9 @@ class Config implements ConfigInterface
     {
         $this->setVersion($version);
 
-        $this->setApiKey($apiKey ?: getenv('STRIPE_API_KEY'));
+        $this->setApiKey($apiKey);
 
-        $this->setApiVersion($apiVersion ?: getenv('STRIPE_API_VERSION') ?: '2017-06-05');
+        $this->setApiVersion($apiVersion);
     }
 
     /**
